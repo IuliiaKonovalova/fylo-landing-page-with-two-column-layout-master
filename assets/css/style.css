@@ -170,6 +170,10 @@ body {
   padding: 1em;
 }
 
+.email:focus {
+  outline: none;
+}
+
 .email::placeholder {
   color: var(--clr-neutral--300);
 }
@@ -182,6 +186,21 @@ body {
 .hero__email {
   width: 20rem;
   margin-right: 1.2em;
+}
+
+.btn {
+  padding: 1em 4.5em;
+  background-color: var(--clr-accent--500);
+  border: 1px solid var(--clr-accent--500);
+  color: white;
+  font-weight: 700;
+  border-radius: var(--br);
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.7;
 }
 
 /* Hero Image */
