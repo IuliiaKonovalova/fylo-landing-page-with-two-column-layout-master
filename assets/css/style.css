@@ -152,7 +152,8 @@ body {
 }
 
 .hero__content--description,
-.incentive__content--description {
+.incentive__content--description,
+.testimonial__description {
   font-size: 1.1rem;
   line-height: 1.6rem;
   margin-bottom: 1em;
@@ -311,4 +312,52 @@ body {
 .incentive__link:hover::before {
   color: #36c4b8;
   border-bottom: solid 1px #36c4b8;
+}
+
+/* Testimonial Card */
+.incentive__testimonial {
+  max-width: 28rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1.9em 2.2em;
+  margin-top: 1.7em;
+  border-radius: var(--br);
+  box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.14);
+}
+
+.quotes {
+  width: 1.2rem;
+  margin-bottom: 0.5em;
+}
+
+.testimonial__author {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial__author--image {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1em;
+}
+
+.testimonial__author--image img {
+  border-radius: 50%;
+}
+
+.testimonial__author--data {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial__author--name {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.testimonial__author--position {
+  font-size: 0.8rem;
 }
