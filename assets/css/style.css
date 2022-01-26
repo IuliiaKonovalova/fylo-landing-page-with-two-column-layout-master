@@ -6,7 +6,7 @@
   /* footer background */
   --clr-primary--900: hsl(243, 87%, 12%);
   /* link */
-  --clr-accent--300: hsl(170, 45%, 43%);
+  --clr-accent--300: #3c9f8f;
   /* buttons */
   --clr-accent--500: #3065f8;
   /* error */
@@ -196,12 +196,13 @@ body {
 }
 
 .hero__email {
-  width: 20rem;
+  width: 20vw;
+  max-width: 15rem;
   margin-right: 1.2em;
 }
 
 .btn {
-  padding: 1em 4.5em;
+  padding: 1em 2.5vw;
   background-color: var(--clr-accent--500);
   border: 1px solid var(--clr-accent--500);
   color: white;
@@ -318,7 +319,7 @@ body {
 
 .incentive__link:hover::before {
   color: #36c4b8;
-  border-bottom: solid 1px #36c4b8;
+  border-bottom: solid 5px #36c4b8;
 }
 
 /* Testimonial Card */
