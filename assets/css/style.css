@@ -468,3 +468,32 @@ body {
 .footer__icon--email {
   margin-top: 0.35rem;
 }
+
+.footer__links--social {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__link--social:not(:last-child) {
+  margin-right: 1.2em;
+}
+
+.footer__link--social {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__link--social a {
+  color: white;
+}
+
+.footer__link--social a i {
+  width: 1rem;
+  height: 1rem;
+}
