@@ -17,7 +17,7 @@
   --ff-primary: 'Open Sans', sans-serif;
   /* Headings, Call-to-actions, Header Navigation */
   --ff-accent: 'Raleway', sans-serif;
-  --br: 1.75em;
+  --br: 0.25em;
 }
 
 
@@ -154,9 +154,37 @@ body {
 .incentive__content--description {
   font-size: 1.1rem;
   line-height: 1.7rem;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
+/* Hero Form */
+
+.form {
+  display: flex;
+}
+
+.email {
+  outline: none;
+  border: 1px solid var(--clr-primary--900);
+  border-radius: var(--br);
+  padding: 1em;
+}
+
+.email::placeholder {
+  color: var(--clr-neutral--300);
+}
+
+.email:not(:placeholder-shown) {
+  color: var(--clr-primary--900);
+  font-weight: 700;
+}
+
+.hero__email {
+  width: 20rem;
+  margin-right: 1.2em;
+}
+
+/* Hero Image */
 .hero__image {
   width: 50%;
 }
