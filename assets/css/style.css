@@ -163,7 +163,8 @@ body {
 
 /* Hero Form */
 
-.form {
+.form1,
+.form2 {
   display: flex;
   position: relative;
   margin-top: 1.5em;
@@ -176,7 +177,8 @@ body {
   padding: 1em;
 }
 
-.form.error .email {
+.form1.error .email,
+.form2.error .email {
   border: 1px solid var(--clr-accent--900)
 }
 
@@ -220,24 +222,28 @@ body {
   position: absolute;
   top: 3.3em;
   font-size: 0.9rem;
+  z-index: 999;
   display: none;
 }
 
-.form.error .error__message {
+.form1.error .error__message,
+.form2.error .error__message {
   display: block;
 }
 
-/* Error messages */
+/* Success messages */
 
 .success__message {
-  color: var(--clr-accent--500);
+  color: var(--clr-accent--300);
+  font-weight: 700;
   position: absolute;
   top: 3.3em;
   font-size: 0.9rem;
   display: none;
 }
 
-.form.success .success__message {
+.form1.success .success__message,
+.form2.success .success__message {
   display: block;
 }
 
@@ -404,7 +410,7 @@ body {
 
 .contact__email {
   width: 100%;
-  margin-bottom: 2em;
+  margin-bottom: 2.5em;
 }
 
 .contact__btn {
