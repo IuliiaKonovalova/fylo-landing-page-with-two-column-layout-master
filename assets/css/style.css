@@ -10,7 +10,7 @@
   /* buttons */
   --clr-accent--500: hsl(224, 93%, 58%);
   /* error */
-  --clr-accent--900: hsl(0, 61%, 42%);
+  --clr-accent--900: hsl(0, 79%, 62%);
   --clr-neutral--100: hsl(240, 75%, 98%);
   --clr-neutral--300: hsl(0, 0%, 75%);
   --fs: 0.9375rem;
@@ -76,7 +76,7 @@ body {
   align-items: center;
   background-color: white;
   font-family: var(--ff-primary);
-  color: var(clr-primary--900);
+  color: var(--clr-primary--900);
 }
 
 .header__container {
@@ -134,7 +134,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5em 17em 5em;
+  padding: 5em 5em 17em 5em;
 }
 
 .hero__content {
@@ -161,6 +161,7 @@ body {
 
 .form {
   display: flex;
+  position: relative;
 }
 
 .email {
@@ -168,6 +169,10 @@ body {
   border: 1px solid var(--clr-primary--900);
   border-radius: var(--br);
   padding: 1em;
+}
+
+.form.error .email {
+  border: 1px solid var(--clr-accent--900)
 }
 
 .email:focus {
@@ -201,6 +206,33 @@ body {
 
 .btn:hover {
   opacity: 0.7;
+}
+
+/* Error messages */
+.error__message {
+  color: var(--clr-accent--900);
+  position: absolute;
+  top: 3.3em;
+  font-size: 0.9rem;
+  display: none;
+}
+
+.form.error .error__message {
+  display: block;
+}
+
+/* Error messages */
+
+.success__message {
+  color: var(--clr-accent--500);
+  position: absolute;
+  top: 3.3em;
+  font-size: 0.9rem;
+  display: none;
+}
+
+.form.success .success__message {
+  display: block;
 }
 
 /* Hero Image */
