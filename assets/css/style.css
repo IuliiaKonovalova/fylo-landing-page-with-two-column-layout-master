@@ -74,7 +74,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--clr-neutral--100);
+  background-color: white;
   font-family: var(--ff-primary);
   color: var(clr-primary--900);
 }
@@ -84,11 +84,12 @@ body {
 }
 
 .navbar {
-  max-width: 100rem;
+  max-width: 120rem;
   margin: 4rem auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 4em 0 4em;
 }
 
 .navbar__logo {
@@ -109,4 +110,53 @@ body {
 
 .navbar__link a:hover {
   color: var(--clr-primary--500);
+}
+
+/* Main */
+
+.main {
+  width: 100%;
+}
+
+/* ----- Hero Section ----- */
+
+.hero {
+  background-color: white;
+  background-image: url('../images/bg-curve-desktop.svg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hero__container {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5em 17em 5em;
+}
+
+.hero__content {
+  width: 50%;
+  max-width: 39rem;
+  text-align: left;
+}
+
+.hero__content--title {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  margin-bottom: 0.5em;
+  font-family: var(--ff-accent);
+}
+
+.hero__content--description,
+.incentive__content--description {
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  margin-bottom: 1em;
+}
+
+.hero__image {
+  width: 50%;
 }
