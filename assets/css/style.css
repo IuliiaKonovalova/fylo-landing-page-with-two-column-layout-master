@@ -56,7 +56,8 @@ ul li {
 
 a {
   text-decoration: none;
-  color: var(--clr-neutral--100);
+  color: var(--clr-primary--900);
+  text-transform: capitalize;
 }
 
 
@@ -64,4 +65,48 @@ img {
   display: block;
   width: 100%;
   object-fit: contain;
+}
+
+/* Body */
+
+body {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--clr-neutral--100);
+  font-family: var(--ff-primary);
+  color: var(clr-primary--900);
+}
+
+.header__container {
+  width: 100%;
+}
+
+.navbar {
+  max-width: 100rem;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__logo {
+  width: 10vw;
+}
+
+.navbar__links {
+  display: flex;
+}
+
+.navbar__link a {
+  font-size: 1.2rem;
+}
+
+.navbar__link:not(:first-child) {
+  margin-left: 4.5rem;
+}
+
+.navbar__link a:hover {
+  color: var(--clr-primary--500);
 }
