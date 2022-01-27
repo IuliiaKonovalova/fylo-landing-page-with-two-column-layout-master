@@ -26,15 +26,8 @@ const submission = function (e, someValue) {
   if (!validateEmail(someValue)) {
     emailErrorInput();
   } else {
-    if (emailSignUp.value !== "") {
-      emailSignUp.value = "";
-      submissionFormSignUp.classList.remove("error");
-      submissionFormSignUp.classList.add("success");
-    } else {
-      emailOffer.value = "";
-      submissionFormOffer.classList.remove("error");
-      submissionFormOffer.classList.add("success");
-    }
+    emailSuccessInput();
+
   }
 };
 
@@ -65,5 +58,22 @@ const emailErrorInput = function () {
     submissionFormOffer.classList.add("error");
     submissionFormOffer.classList.remove("success");
     emailOffer.value = "";
+  }
+}
+
+
+/**
+ * Check which form was used,
+ * Displays success message
+ */
+const emailSuccessInput = function () {
+  if (emailSignUp.value !== "") {
+    emailSignUp.value = "";
+    submissionFormSignUp.classList.remove("error");
+    submissionFormSignUp.classList.add("success");
+  } else {
+    emailOffer.value = "";
+    submissionFormOffer.classList.remove("error");
+    submissionFormOffer.classList.add("success");
   }
 }
