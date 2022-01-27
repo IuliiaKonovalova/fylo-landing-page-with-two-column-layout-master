@@ -66,7 +66,7 @@ img {
   object-fit: contain;
 }
 
-/* Body */
+/* //------- Body -------// */
 
 body {
   max-width: 100%;
@@ -111,7 +111,7 @@ body {
   color: var(--clr-primary--500);
 }
 
-/* Main */
+/* //------- Main -------// */
 
 .main {
   width: 100%;
@@ -278,12 +278,6 @@ body {
   width: 80%;
 }
 
-
-/* Incentive Image */
-.incentive__image {
-  width: 50%;
-}
-
 .incentive__link {
   display: flex;
   height: 4rem;
@@ -374,6 +368,11 @@ body {
   font-size: 0.8rem;
 }
 
+/* Incentive Image */
+.incentive__image {
+  width: 50%;
+}
+
 /* ----- Contact ----- */
 .contact {
   background-color: var(--clr-primary--500);
@@ -422,7 +421,7 @@ body {
   padding: 1em 2.2em;
 }
 
-/* ----- Footer ----- */
+/* //------- Footer -------// */
 .footer {
   width: 100%;
   background-color: var(--clr-primary--900);
@@ -439,11 +438,13 @@ body {
   padding: 7em 5em 5em 5em;
 }
 
+/* Logo */
 .footer__logo--container {
   width: 8rem;
   margin-bottom: 3.5em;
 }
 
+/* Main links' Container */
 .footer__links--container {
   display: flex;
   justify-content: start;
@@ -483,6 +484,7 @@ body {
   margin-right: 1.2em;
 }
 
+/* Social links */
 .footer__link--social {
   width: 2.5rem;
   height: 2.5rem;
@@ -503,8 +505,6 @@ body {
   height: 1rem;
 }
 
-/* --clr-primary--500 */
-
 .footer__link:hover,
 .footer__link:hover a,
 .footer__link--social:hover a {
@@ -519,6 +519,7 @@ body {
   border: 1px solid var(--clr-accent--500);
 }
 
+/* Attributions' links */
 .attribution {
   font-size: 1.2rem;
   text-align: center;
@@ -530,6 +531,7 @@ body {
   color: #17d3d3;
 }
 
+/* Media for small desktop screens */
 @media all and (max-width: 1480px) {
   .hero__container {
     padding: 5em 5em 15em 5em;
@@ -564,6 +566,7 @@ body {
   }
 }
 
+/* Media for smallest desktop screens */
 @media all and (max-width: 1180px) {
 
   .hero__content--title,
@@ -592,7 +595,6 @@ body {
     width: 50%;
   }
 
-
   .arrow__icon {
     left: 9rem;
   }
@@ -609,10 +611,12 @@ body {
     margin-right: 9vw;
     font-size: 0.9rem;
   }
-
 }
 
+/* Media for Tablet screens */
 @media all and (max-width: 948px) {
+
+  /* navbar */
   .navbar {
     margin: 2em auto;
     padding: 0 2em 0 2em;
@@ -630,12 +634,12 @@ body {
     margin-left: 2.5em;
   }
 
+  /* main */
   .hero__container,
   .incentive__container {
     flex-direction: column-reverse;
     padding: 2em 2em 12em 2em;
   }
-
 
   .hero__content,
   .incentive__content {
@@ -726,7 +730,6 @@ body {
     text-align: center;
     padding-top: 3em;
     width: 100vw;
-
   }
 
   .contact__content {
@@ -748,6 +751,7 @@ body {
     width: 90%;
   }
 
+  /* Footer */
   .footer__main {
     padding: 5em 5em 2em 5em;
   }
@@ -771,11 +775,10 @@ body {
   .footer__links--social {
     justify-content: center;
   }
-
 }
 
+/* Media for mobile screens */
 @media all and (max-width: 554px) {
-
   .navbar {
     margin: 1.5em auto;
     padding: 0 1.2em 0 1.2em;
@@ -826,8 +829,8 @@ body {
   }
 }
 
+/* Media for small mobile screens */
 @media all and (max-width: 385px) {
-
   .navbar {
     flex-direction: column;
     align-items: start;
