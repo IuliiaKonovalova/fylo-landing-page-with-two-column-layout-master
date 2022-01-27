@@ -1,3 +1,4 @@
+/* jshint esversion:8 */
 // Variables
 const submissionFormSignUp = document.getElementById("form--signup");
 const emailSignUp = document.getElementById("email--signup");
@@ -59,7 +60,7 @@ const emailErrorInput = function () {
     submissionFormOffer.classList.remove("success");
     emailOffer.value = "";
   }
-}
+};
 
 
 /**
@@ -76,4 +77,4 @@ const emailSuccessInput = function () {
     submissionFormOffer.classList.remove("error");
     submissionFormOffer.classList.add("success");
   }
-}
+};
