@@ -646,6 +646,7 @@ body {
   .incentive__content--title {
     font-size: 1.8rem;
     line-height: 2.2rem;
+    padding-right: 0;
   }
 
   .hero__content--description,
@@ -656,6 +657,7 @@ body {
     width: 70%;
     margin: 0 auto;
     padding-bottom: 1em;
+    padding-right: 0;
   }
 
   .form1 {
@@ -766,4 +768,17 @@ body {
 
 }
 
-@media all and (max-width: 554px) {}
+@media all and (max-width: 554px) {
+
+  .hero__content--title,
+  .incentive__content--title {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  .hero__content--description,
+  .incentive__content--description,
+  .testimonial__description {
+    width: 90%;
+  }
+}
