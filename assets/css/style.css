@@ -179,7 +179,7 @@ body {
 
 .form1.error .email,
 .form2.error .email {
-  border: 1px solid var(--clr-accent--900)
+  border: 2px solid var(--clr-accent--900)
 }
 
 .email:focus {
@@ -225,6 +225,7 @@ body {
   font-size: 0.9rem;
   z-index: 999;
   display: none;
+  font-weight: 700;
 }
 
 .form1.error .error__message,
@@ -675,6 +676,14 @@ body {
     margin-bottom: 1.2em;
   }
 
+  .error__message {
+    top: -1.3rem;
+  }
+
+  .success__message {
+    top: -1.3rem;
+  }
+
   .btn {
     width: 80%;
   }
@@ -696,9 +705,6 @@ body {
   }
 
   .incentive__link::before {
-    /* left: 35%;
-    width: 12.4rem;
-    top: 75%; */
     display: none;
   }
 
