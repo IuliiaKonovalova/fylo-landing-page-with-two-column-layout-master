@@ -18,23 +18,13 @@ document.addEventListener("DOMContentLoaded", function () {
     let emailInputOffer = emailOffer.value;
     submission(e, emailInputOffer);
   });
-
 });
 
 
 const submission = function (e, someValue) {
   e.preventDefault();
-  console.log(someValue)
   if (!validateEmail(someValue)) {
-    if (emailSignUp.value !== "") {
-      submissionFormSignUp.classList.add("error");
-      submissionFormSignUp.classList.remove("success");
-      emailSignUp.value = "";
-    } else {
-      submissionFormOffer.classList.add("error");
-      submissionFormOffer.classList.remove("success");
-      emailOffer.value = "";
-    }
+    emailErrorInput();
   } else {
     if (emailSignUp.value !== "") {
       emailSignUp.value = "";
@@ -60,3 +50,20 @@ const validateEmail = (someValue) => {
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     );
 };
+
+
+/**
+ * Check which form was used,
+ * Displays error message
+ */
+const emailErrorInput = function () {
+  if (emailSignUp.value !== "") {
+    submissionFormSignUp.classList.add("error");
+    submissionFormSignUp.classList.remove("success");
+    emailSignUp.value = "";
+  } else {
+    submissionFormOffer.classList.add("error");
+    submissionFormOffer.classList.remove("success");
+    emailOffer.value = "";
+  }
+}
