@@ -635,6 +635,7 @@ body {
     padding: 2em 2em 12em 2em;
   }
 
+
   .hero__content,
   .incentive__content {
     text-align: center;
@@ -702,7 +703,6 @@ body {
   }
 
   .incentive__testimonial {
-    /* width: 100%; */
     max-width: 30rem;
     margin: 2em auto;
     background-color: white;
@@ -780,5 +780,43 @@ body {
   .incentive__content--description,
   .testimonial__description {
     width: 90%;
+  }
+
+  .navbar {
+    margin: 1.5em auto;
+    padding: 0 1.2em 0 1.2em;
+  }
+
+  .navbar__logo {
+    width: 15vw;
+  }
+
+  .navbar__link a {
+    font-size: 0.9rem;
+  }
+
+  .navbar__link:not(:first-child) {
+    margin-left: 1.8em;
+  }
+
+
+  .contact__container {
+    padding: 5em 2em 5em 2em;
+  }
+
+  .contact__form {
+    width: 90%;
+  }
+
+  .contact__email {
+    width: 100%;
+  }
+
+  .contact__btn {
+    width: 100%;
+  }
+
+  .footer__main {
+    padding: 5em 2.5em 2em 2.5em;
   }
 }
