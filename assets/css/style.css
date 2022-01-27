@@ -172,7 +172,7 @@ body {
 
 .email {
   outline: none;
-  border: 1px solid var(--clr-primary--900);
+  border: 1px solid hsla(243, 87%, 12%, 0.294);
   border-radius: var(--br);
   padding: 1em;
 }
@@ -289,7 +289,6 @@ body {
   align-items: center;
   color: var(--clr-accent--300);
   position: relative;
-
 }
 
 .incentive__link a {
@@ -611,3 +610,160 @@ body {
   }
 
 }
+
+@media all and (max-width: 948px) {
+  .navbar {
+    margin: 2em auto;
+    padding: 0 2em 0 2em;
+  }
+
+  .navbar__logo {
+    width: 12vw;
+  }
+
+  .navbar__link a {
+    font-size: 1rem;
+  }
+
+  .navbar__link:not(:first-child) {
+    margin-left: 2.5em;
+  }
+
+  .hero__container,
+  .incentive__container {
+    flex-direction: column-reverse;
+    padding: 2em 2em 12em 2em;
+  }
+
+  .hero__content,
+  .incentive__content {
+    text-align: center;
+    padding-top: 3em;
+    width: 90vw;
+  }
+
+  .hero__content--title,
+  .incentive__content--title {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  .hero__content--description,
+  .incentive__content--description,
+  .testimonial__description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 1em;
+  }
+
+  .form1 {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero__email {
+    width: 80%;
+    max-width: 55rem;
+    margin-right: 0;
+    margin-bottom: 1.2em;
+  }
+
+  .btn {
+    width: 80%;
+  }
+
+  .incentive__link {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .incentive__link a {
+    font-size: 1rem;
+    margin-right: 0.5em;
+  }
+
+  .arrow__icon {
+    left: 58%;
+    top: 1.4rem;
+    position: unset;
+  }
+
+  .incentive__link::before {
+    /* left: 35%;
+    width: 12.4rem;
+    top: 75%; */
+    display: none;
+  }
+
+  .incentive__testimonial {
+    /* width: 100%; */
+    max-width: 30rem;
+    margin: 2em auto;
+    background-color: white;
+    padding: 1.9em 2.7em;
+  }
+
+  .testimonial__description,
+  .testimonial__author--name {
+    text-align: left;
+    width: 100%;
+  }
+
+  .contact__container {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 3em;
+    width: 100vw;
+
+  }
+
+  .contact__content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact__form {
+    align-items: center;
+    width: 90%;
+  }
+
+  .contact__email {
+    width: 90%;
+    margin-bottom: 0.8em;
+  }
+
+  .contact__btn {
+    width: 90%;
+  }
+
+  .footer__main {
+    padding: 5em 5em 2em 5em;
+  }
+
+  .footer__logo--container {
+    width: 10rem;
+    margin-bottom: 2.5em;
+  }
+
+  .footer__links--container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer__links {
+    margin-bottom: 1.5em;
+    margin-right: 0;
+    font-size: 1.1rem;
+  }
+
+  .footer__links--social {
+    justify-content: center;
+  }
+
+}
+
+@media all and (max-width: 554px) {}
