@@ -4,7 +4,7 @@ const emailSignUp = document.getElementById("email--signup");
 const submissionFormOffer = document.getElementById("form--offer");
 const emailOffer = document.getElementById("email--offer");
 let emailInputSignUp;
-// let emailInputOffer = emailOffer.value;
+let emailInputOffer;
 
 // Main function on load
 document.addEventListener("DOMContentLoaded", function () {
@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   submissionFormOffer.addEventListener('submit', function (e) {
+    let emailInputOffer = emailOffer.value;
     submission(e, emailInputOffer);
   });
 
@@ -25,14 +26,25 @@ const submission = function (e, someValue) {
   e.preventDefault();
   console.log(someValue)
   if (!validateEmail(someValue)) {
-    submissionFormSignUp.classList.add("error");
-    submissionFormSignUp.classList.remove("success");
-    console.log("Error")
+    if (emailSignUp.value !== "") {
+      submissionFormSignUp.classList.add("error");
+      submissionFormSignUp.classList.remove("success");
+      emailSignUp.value = "";
+    } else {
+      submissionFormOffer.classList.add("error");
+      submissionFormOffer.classList.remove("success");
+      emailOffer.value = "";
+    }
   } else {
-    someValue.value = "";
-    submissionFormSignUp.classList.remove("error");
-    submissionFormSignUp.classList.add("success");
-    console.log("success")
+    if (emailSignUp.value !== "") {
+      emailSignUp.value = "";
+      submissionFormSignUp.classList.remove("error");
+      submissionFormSignUp.classList.add("success");
+    } else {
+      emailOffer.value = "";
+      submissionFormOffer.classList.remove("error");
+      submissionFormOffer.classList.add("success");
+    }
   }
 };
 
